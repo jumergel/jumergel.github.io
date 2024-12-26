@@ -1,0 +1,145 @@
+/* global */
+@import url('https://fonts.googleapis.com/css?family=Roboto'); 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', sans-serif;
+    background-color: #e7f2f8;
+    color: #46484c;
+}
+
+header {
+    background-color: #96bdd8;
+    color: #a4b5f2;
+    padding: 20px 0;
+    font-family: 'Playfair Display', sans-serif;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #f0f4fc;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  
+  nav ul li a:hover {
+    background-color: #a6c6eb;
+  }
+
+a{
+    color: #2f3031;
+    text-decoration: none;
+}
+
+/* homepage */
+.title {
+    padding-top: 20vh;
+    display: flex;
+    justify-content: 14vw;
+    align-items: center;
+}
+
+.title a{
+    padding-bottom: 100px;
+}
+
+.portrait {
+    flex: 1;
+    padding-left: 17vw;
+    font-size: x-large;
+}
+
+.leftContainer{
+    flex: 1;
+    padding-left: 25%;
+    font-size: x-large;
+}
+
+.rightContainer {
+    flex: 1;
+}
+
+.info{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+/* about page */
+.about{
+    padding-left: 10vw;
+    padding-top: 10vh;
+    width: 70%;
+    padding-bottom: 150px;
+}
+
+.about p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+}
+
+
+
+
+/* animations */
+.about a:hover{
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.white:hover{
+    position: relative;
+    padding-left: 10px;
+}
+
+.title a:hover{
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+
+.social-links{
+    font-size: 2rem;
+}
+
+.fa-youtube{
+    padding-right: 1%;
+}
+
+.fa-linkedin{
+    padding-right: 1%;
+}
+
+.fa-github{
+    padding-right: 1%;
+}
+
+/* media queres */
+@media(max-width:780px){
+    .name-section{
+        padding:0;
+        padding-top: 5rem;
+    }
+    .about{
+        padding: 0;
+        padding-left: 1.5rem;
+        padding-top: 2rem;
+    }
+}
