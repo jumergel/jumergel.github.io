@@ -134,16 +134,20 @@ a{
 /* media queres */
 @media(max-width:780px){
     .title {
-        flex-direction: column; 
+        flex-direction: column; /* Stack elements vertically */
         justify-content: center;
-        align-items: flex-start; 
+        align-items: flex-start; /* Align to the left */
         padding: 2rem;
     }
 
-    .portrait, .leftContainer, .rightContainer {
-        flex: 1 1 100%; /* Full width */
+    .portrait, .rightContainer {
+        width: 100%; /* Full width */
         padding: 1rem;
-        font-size: medium; /* Adjust for better readability */
+        order: initial; /* Ensure default stacking order */
+    }
+
+    .portrait {
+        margin-bottom: 1rem; /* Add spacing between stacked elements */
     }
 
     .name-section{
