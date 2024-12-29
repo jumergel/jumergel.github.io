@@ -133,13 +133,43 @@ a{
 
 /* media queres */
 @media(max-width:780px){
+    .title {
+        flex-direction: column; 
+        justify-content: center;
+        align-items: flex-start; 
+        padding: 2rem;
+    }
+
+    .portrait, .leftContainer, .rightContainer {
+        flex: 1 1 100%; /* Full width */
+        padding: 1rem;
+        font-size: medium; /* Adjust for better readability */
+    }
+
     .name-section{
         padding:0;
         padding-top: 5rem;
     }
+
     .about{
-        padding: 0;
+        padding: 1.5rem;
+        width: 100%;
+        /* padding: 0;
         padding-left: 1.5rem;
-        padding-top: 2rem;
+        padding-top: 2rem; */
+    }
+
+    .info {
+        padding: 1rem 0; /* Compact spacing */
+    }
+
+    nav ul li {
+        display: block; /* Stack nav links vertically */
+        margin: 0.5rem 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 1rem; /* Easier to click links */
     }
 }
