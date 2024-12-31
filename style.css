@@ -131,6 +131,48 @@ a{
     padding-right: 1%;
 }
 
+/* movies*/
+.category {
+    padding: 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.life:hover {
+    background-color: #B1C9DD; 
+}
+
+.psychological-thriller:hover {
+    background-color: #ffa3a3; 
+}
+
+.surf:hover {
+    background-color: #b3e3cf;
+}
+
+.heartwarming-comedy:hover {
+    background-color: #fff9c4; 
+}
+
+.romance:hover {
+    background-color: #fad2e7; 
+}
+
+.true-story:hover {
+    background-color: #fae2d2; 
+}
+
+.artistic:hover {
+    background-color: #e8d2fa; 
+}
+
+
+
+
+
+
+
+
 /* media queres */
 @media(max-width:780px){
     .title {
@@ -174,3 +216,8 @@ a{
         padding: 1rem; /* Easier to click links */
     }
 }
+
+
+
+
+
