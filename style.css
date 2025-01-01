@@ -137,6 +137,26 @@ a{
     padding: 10px;
     border-radius: 20px;
     transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.category:hover::after {
+    content: "Genre"; /* Text that appears on hover */
+    position: absolute;
+    right: 20px; /* Distance from the right */
+    top: 50%; /* Vertically center the text */
+    transform: translateY(-50%);
+    color: white;
+    padding-right: 15%;
+    font-size: 2rem;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text wrapping */
+    pointer-events: none; /* Prevent the pseudo-element from interfering with the hover */
+    z-index: 1; /* Ensure it appears on top */
+}
+
+.life:hover::after {
+    content: "Life"; /* Text that appears on hover */
 }
 
 .life:hover {
@@ -144,27 +164,49 @@ a{
 }
 
 .psychological-thriller:hover {
-    background-color: #ffa3a3; 
+    background-color: #ffa3a3;
+}
+
+.psychological-thriller:hover::after {
+    content: "Psychological Thriller"; /* Text that appears on hover */
 }
 
 .surf:hover {
     background-color: #b3e3cf;
 }
 
+.surf:hover::after {
+    content: "Surf"; /* Text that appears on hover */
+}
+
 .heartwarming-comedy:hover {
-    background-color: #fff9c4; 
+    background-color:#fae484; 
+}
+
+.heartwarming-comedy:hover::after {
+    content: "Heartwarming Comedy"; /* Text that appears on hover */
 }
 
 .romance:hover {
     background-color: #fad2e7; 
 }
 
+.romance:hover::after {
+    content: "Romance"; /* Text that appears on hover */
+}
+
 .true-story:hover {
     background-color: #fae2d2; 
+}
+.true-story:hover::after {
+    content: "True Story"; /* Text that appears on hover */
 }
 
 .artistic:hover {
     background-color: #e8d2fa; 
+}
+.artistic:hover::after {
+    content: "Artistic"; /* Text that appears on hover */
 }
 
 
