@@ -132,7 +132,7 @@ a{
     padding-right: 1%;
 }
 
-/* movies*/
+/* movies and music genres*/
 .category {
     padding: 10px;
     border-radius: 20px;
@@ -155,6 +155,40 @@ a{
     z-index: 1; /* Ensure it appears on top */
 }
 
+.folk:hover::after{
+    content:"Folk";
+}
+
+.folk:hover {
+    background-color: #fae2d2; 
+}
+
+.sad:hover::after{
+    content:"Sad";
+}
+
+.sad:hover {
+    background-color: #B1C9DD; 
+}
+
+.classical:hover::after{
+    content:"Classical";
+}
+
+.classical:hover {
+    background-color: #fae484; 
+}
+
+.EDM:hover::after{
+    content:"EDM";
+}
+
+.EDM:hover {
+    background-color: #e8d2fa; 
+}
+
+
+/* movie genres*/
 .life:hover::after {
     content: "Life"; /* Text that appears on hover */
 }
