@@ -62,7 +62,7 @@ a{
 
 .title2 {
     padding-top: 0.7%;
-    background-color: #192127;
+    background-color:  #2f3031; /* or blue #96bdd8; */
     border-bottom-left-radius: 50% 200px; /* Oval shape on the bottom left */
     border-bottom-right-radius: 50% 200px;
     overflow: hidden;
