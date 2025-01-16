@@ -1,6 +1,12 @@
 /* global */
 @import url('https://fonts.googleapis.com/css?family=Roboto'); 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
 
 body{
     margin: 0;
@@ -14,8 +20,10 @@ header {
     background-color: #96bdd8;
     color: #a4b5f2;
     padding: 20px 0;
-    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Newsreader', serif;
   }
+
+  
   
   nav ul {
     list-style-type: none;
@@ -47,20 +55,93 @@ a{
 
 /* homepage */
 .title {
-    padding-top: 20vh;
     display: flex;
     justify-content: 14vw;
-    align-items: center;
+    padding-bottom: 2.7%;
+}
+
+.title2 {
+    padding-top: 0.7%;
+    background-color: #192127;
+    border-bottom-left-radius: 50% 200px; /* Oval shape on the bottom left */
+    border-bottom-right-radius: 50% 200px;
+    overflow: hidden;
+    margin-left: -50px; 
+    margin-right: -50px;
 }
 
 .title a{
     padding-bottom: 100px;
 }
 
-.portrait {
+.name {
+    padding-top: 15vh;
     flex: 1;
-    padding-left: 17vw;
-    font-size: x-large;
+    padding-left: 15vw;
+    font-size: 3rem;
+}
+
+.longPortrait {
+    padding-top: 15vh;
+    flex: 1;
+    margin-left: -5vw;
+}
+
+.imageSet{
+    padding-top: 5%;
+    padding-left: 7%;
+    padding-bottom:5%;
+    position: relative;
+    z-index:0;
+}
+
+.imageTitle1{
+    position: absolute;
+    color:#f0f4fc;
+    margin-top: -7vh;
+    margin-left: 0.4vw;
+    font-size:6rem;
+    line-height: 0.8;
+    z-index: 2;
+}
+
+.imageTitle2{
+    position: absolute;
+    color:#f0f4fc;
+    margin-top: 61vh;
+    margin-left: 59.5vw;
+    font-size:6rem;
+    line-height: 0.8;
+    z-index:2;
+}
+
+.resumeLink a{
+    margin-left:35vw;
+    margin-top:9vh;
+    text-decoration: none; 
+    color:#f0f4fc;
+    position: relative; 
+    display: inline-block; 
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.resumeLink a::after {
+    content: ''; 
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%; 
+    height: 2px;
+    background-color: #f0f4fc;
+}
+
+.contact{
+    font-size:2rem;
+    padding-bottom:25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
 }
 
 .leftContainer{
@@ -73,16 +154,12 @@ a{
     flex: 1;
 }
 
-.info{
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
 
 /* about page */
 .about{
-    padding-left: 10vw;
+    padding-left: 25vw;
     padding-top: 10vh;
-    width: 70%;
+    width: 50%;
     padding-bottom: 150px;
 }
 
@@ -92,10 +169,25 @@ a{
     margin:0;
 }
 
+/* images */
+.flyers{
+    padding-left: 20vw;
+    padding-top: 10vh;
+    width: 70%;
+    padding-bottom: 150px;
+}
+
 
 
 
 /* animations */
+.imageSet img:hover {
+    transform: scale(1.05); 
+    transition: transform 0.2s ease; 
+    position: relative;
+    z-index:1;
+}
+
 .about a:hover{
     font-size: 1.3rem;
     color: #fff;
@@ -116,11 +208,24 @@ a{
 
 
 
-.social-links{
-    font-size: 2rem;
+.social-links {
+    font-size: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
+    width: 250px; /* Increased width for larger icons */
+    height: 250px; /* Increased height for larger icons */
+}
+.social-links a{
+    margin-left: -20vw;
+    margin-top: -8vh;
 }
 
-.fa-youtube{
+.social-links a:hover {
+    color: white; /* White color for the icons */
+    transition: transform 0.3s ease;
+}
+
+/* .fa-youtube{
     padding-right: 1%;
 }
 
@@ -130,7 +235,7 @@ a{
 
 .fa-github{
     padding-right: 1%;
-}
+} */
 
 /* movies and music genres*/
 .category {
