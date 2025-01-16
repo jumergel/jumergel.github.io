@@ -89,7 +89,7 @@ a{
 
 .imageSet{
     padding-top: 5%;
-    padding-left: 7%;
+    padding-left: 10%;
     padding-bottom:5%;
     position: relative;
     z-index:0;
@@ -357,6 +357,10 @@ a{
 
 /* media queres */
 @media(max-width:780px){
+    html{
+        overflow-x: hidden;
+    }
+
     .title {
         flex-direction: column; /* Stack elements vertically */
         justify-content: center;
@@ -364,29 +368,80 @@ a{
         padding: 2rem;
     }
 
-    .portrait, .rightContainer {
-        width: 100%; /* Full width */
-        padding: 1rem;
-        order: initial; /* Ensure default stacking order */
+    .name{
+        font-size: 1rem;
+        margin-top: -10vh;
+        margin-left: -10vw;
+    }
+    
+    .longPortrait, .rightContainer {
+        width: 100%; 
+        order: initial; 
     }
 
-    .portrait {
-        margin-bottom: 1rem; /* Add spacing between stacked elements */
+    .longPortrait {
+        margin-bottom: 1rem; 
+        margin-left: 8vw;
+        margin-top: -12vh;
     }
 
-    .name-section{
+    .imageSet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: -9vw;
+    }
+
+    .imageSet img {
+        max-width: 90%;
+        margin: 10px;
+    }
+
+    .imageTitle1, .imageTitle2 {
+        margin-top: 10vh;
+        font-size: 3rem;
+    }
+
+    .imageTitle2 {
+        margin-left: -6vw;
+        margin-top: 185vh;
+    }
+
+    .resumeLink {
+        margin-left: -30vw;
+    }
+
+    .title2{
+        padding-bottom: 10vh;
+    }
+
+    .contact p {
+        font-size: 1.5rem;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .social-links a {
+        font-size: 1.5rem;
+    }
+   
+
+    /* .name-section{
         padding:0;
         padding-top: 5rem;
-    }
+    } */
 
     .about{
         padding: 1.5rem;
         width: 100%;
     }
 
-    .info {
+    /* .info {
         padding: 1rem 0; /* Compact spacing */
-    }
+    
 
     nav ul li {
         display: block; /* Stack nav links vertically */
@@ -398,6 +453,8 @@ a{
         padding: 1rem; /* Easier to click links */
     }
 }
+
+
 
 
 
