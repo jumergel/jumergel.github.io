@@ -226,6 +226,55 @@ a{
     margin:0;
 }
 
+
+/* timeline */
+
+.background {
+    position: absolute; /* Allows it to scroll with the page */
+    top: 60%; /* Adjust as needed to leave some space at the top */
+    left: 10%; /* Adjust as needed to leave space on the left */
+    width: 70%; /* Adjust the width of the background */
+    height: 200%; /* Adjust the height of the background */
+    background-image: url('../photos/dashed2.png'); /* Replace with your image path */
+    background-size: 100%; /* Ensures the image fills the container */
+    z-index: -1; /* Places it behind the content */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  .timeline{
+    margin-top: 10vh;
+    width: 80%;
+    padding-bottom: 150px;
+  }
+
+  .left{
+    padding-left: 20vw;
+  }
+
+  .right{
+    padding-left: 60vw;
+    margin-top: -10%;
+  }
+
+ /* images in timeline.html */
+    .timeline img, .timelineFun img {
+    border-radius: 15px; /* Rounds the edges */
+    border: 2px solid #ccc; /* Optional: Adds a border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    width: 100%; /* Optional: Makes images responsive */
+    max-width: 300px; /* Restricts the maximum size */
+    height: auto; /* Maintains aspect ratio */
+    margin: 10px 0; /* Adds space around the images */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+  }
+  
+  /* Hover Effect */
+   .timeline img:hover, .timelineFun img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    }
+
 /* images */
 .flyers{
     padding-left: 20vw;
