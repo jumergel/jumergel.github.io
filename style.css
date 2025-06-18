@@ -29,9 +29,15 @@ body{
 header {
     background-color: #96bdd8;
     color: #a4b5f2;
-    padding: 10px 20px;
+    padding: 12px 20px;
     font-family: 'Newsreader', serif;
   }
+
+  header nav ul li a:not(:has(img)) {
+    position: relative;
+    top: 2px;
+  }
+  
 
   /* General Styles for the Nav Bar */
 nav ul {
