@@ -1,0 +1,21 @@
+.page-styling {
+  background-color: #f0f4f8;
+  background: linear-gradient(to bottom, rgb(245, 241, 249), rgb(192, 171, 223));
+
+    color: #282c34;
+  }
+.page-styling h1{
+  font-weight: 600;
+  margin-top: 2vh;
+
+}
+
+.page-styling a {
+  color:  rgb(192, 171, 223);
+}
+
+.default-card {
+  border-radius: '12px';
+  color: #282c34;
+
+}

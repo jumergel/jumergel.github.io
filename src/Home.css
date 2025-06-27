@@ -1,0 +1,11 @@
+/* Styling for Bottom Half of Home Page -JM */
+
+.intro-screen p {
+    max-width: 50vw;
+    padding-bottom: 5vh;
+  
+  }
+
+.intro-screen h1 {
+    font-weight:1000
+}
