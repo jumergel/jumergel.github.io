@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.378a25f4.css",
-    "main.js": "/static/js/main.513654be.js",
-    "static/js/453.557ad70b.chunk.js": "/static/js/453.557ad70b.chunk.js",
-    "static/media/lavender-ai.jpg": "/static/media/lavender-ai.0c10e0f75e7618fc740d.jpg",
-    "index.html": "/index.html",
-    "main.378a25f4.css.map": "/static/css/main.378a25f4.css.map",
-    "main.513654be.js.map": "/static/js/main.513654be.js.map",
-    "453.557ad70b.chunk.js.map": "/static/js/453.557ad70b.chunk.js.map"
+    "main.css": "/My-React-Website/static/css/main.378a25f4.css",
+    "main.js": "/My-React-Website/static/js/main.ce832427.js",
+    "static/js/453.557ad70b.chunk.js": "/My-React-Website/static/js/453.557ad70b.chunk.js",
+    "static/media/lavender-ai.jpg": "/My-React-Website/static/media/lavender-ai.0c10e0f75e7618fc740d.jpg",
+    "index.html": "/My-React-Website/index.html",
+    "main.378a25f4.css.map": "/My-React-Website/static/css/main.378a25f4.css.map",
+    "main.ce832427.js.map": "/My-React-Website/static/js/main.ce832427.js.map",
+    "453.557ad70b.chunk.js.map": "/My-React-Website/static/js/453.557ad70b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.378a25f4.css",
-    "static/js/main.513654be.js"
+    "static/js/main.ce832427.js"
   ]
 }
