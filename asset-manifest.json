@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.378a25f4.css",
+    "main.js": "/static/js/main.311a1441.js",
+    "static/js/453.b3bd9a63.chunk.js": "/static/js/453.b3bd9a63.chunk.js",
+    "static/media/lavender-ai.jpg": "/static/media/lavender-ai.0c10e0f75e7618fc740d.jpg",
+    "index.html": "/index.html",
+    "main.378a25f4.css.map": "/static/css/main.378a25f4.css.map",
+    "main.311a1441.js.map": "/static/js/main.311a1441.js.map",
+    "453.b3bd9a63.chunk.js.map": "/static/js/453.b3bd9a63.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.378a25f4.css",
+    "static/js/main.311a1441.js"
+  ]
+}
