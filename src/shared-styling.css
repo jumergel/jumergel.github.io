@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Darker+Grotesque:wght@300..900&family=Darumadrop+One&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=UoqMunThenKhung&display=swap');
+
+.basic {
+  font-family: 'UoqMunThenKhung', sans-serif;
+}
+/* 
 .page-styling {
   background-color: #f0f4f8;
   background: linear-gradient(to bottom, rgb(245, 241, 249), rgb(192, 171, 223));
@@ -7,12 +13,13 @@
 .page-styling h1{
   font-weight: 600;
   margin-top: 2vh;
+  text-align: left;
 
 }
 
 .page-styling a {
   color:  rgb(192, 171, 223);
-}
+} */
 
 .default-card {
   border-radius: '12px';

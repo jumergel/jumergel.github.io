@@ -1,77 +1,53 @@
-// The first half of Home Page, background image section - JM
-
-import { Button } from 'react-bootstrap';
+import { Button, Container, Row, Col } from 'react-bootstrap';
 import './Hero.css';
-import lavenderImg from './images/lavender-ai.jpg';
+import heroImg from './images/bird.avif';
+import portrait from './images/portrait.png';
 import { useNavigate } from 'react-router-dom';
+
 
 export default function Hero() {
   const navigate = useNavigate();
 
   return (
-    <div
+    <div 
       style={{
-        backgroundImage: `url(${lavenderImg})`,
+        backgroundImage: `url(${heroImg})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: 'center top',
         backgroundRepeat: 'no-repeat',
-        padding: '100px 0',
-        textAlign: 'center',
-        color: 'white',
-        minHeight: '100vh',
+        minHeight: '93vh',
+        padding: '0px',
         display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
+        color: 'white',
         justifyContent: 'center',
       }}
     >
-      {/* dark overlay box */}
-      <div
-        className="kenburns-top"
-        style={{
-          backgroundColor: 'rgba(0, 0, 0, 0.5)',
-          padding: '40px 60px',
-          borderRadius: '12px',
-          display: 'inline-block',
-        }}
-      >
-        <h1 style={{ color: 'white', fontWeight: 'bold', fontSize: '3rem' }}>
-          NeuroDex
-        </h1>
-        <p style={{ color: 'white', fontSize: '1.25rem', marginBottom: '30px' }}>
-          Making the most of AI.
-        </p>
+      {/* Row container for left + right */}
+    
+        {/* Left: Overlay box */}
+      <Container fluid >
+        <Row>
+          <Col className="hero-styling d-flex flex-column justify-content-center basic ">   
+            <h1  style={{ fontWeight: 'bold' }} className="align-items-end">
+              Julia Mergel.
+            </h1>
+            <p style={{  marginBottom: '30px' }} >
+              Mathematics & Computer Science <br></br> Double Major at UT Austin.
+            </p>
+          </Col>
+          <Col>
+            {/* Right: Portrait image */}
+            <div style={{ flexShrink: 0 }} className="hero-img-container">
+              <img
+                src={portrait}
+                alt="Portrait"
+                className="hero-img"
 
-        {/* buttons */}
-        <div>
-          <Button
-            variant="light"
-            className="mx-2 px-4 py-2 fade-in slide-button"
-            style={{ animationDelay: '0.1s' }}
-            onClick={() => navigate('/pages/Websites')}
-          >
-            AI Webpages
-          </Button>
-
-          <Button
-            variant="light"
-            className="mx-2 px-4 py-2 fade-in slide-button"
-            style={{ animationDelay: '0.5s' }}
-            onClick={() => navigate('/pages/Algorithms')}
-          >
-            ML Models
-          </Button>
-
-          <Button
-            variant="light"
-            className="mx-2 px-4 py-2 fade-in slide-button"
-            style={{ animationDelay: '0.9s' }}
-            onClick={() => navigate('/pages/Datasets')}
-          >
-            Data Sets
-          </Button>
-        </div>
-      </div>
+              />
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }

@@ -1,11 +1,55 @@
 /* Styling for Bottom Half of Home Page -JM */
 
+
+
 .intro-screen p {
     max-width: 50vw;
-    padding-bottom: 5vh;
   
   }
 
 .intro-screen h1 {
-    font-weight:1000
+    font-weight:900
+}
+
+.showcase-section {
+  background-color: #2b2b2b;
+}
+
+.showcase-card {
+  position: relative;
+  padding: 0;
+  margin: 0;  
+  overflow: hidden;
+}
+
+.showcase-img {
+
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  width: 85%;
+  height: 85%;
+  object-fit: cover;
+  display: block;
+}
+
+.showcase-text {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  color: white;
+  font-size: 5rem;
+  font-weight: 600;
+  z-index: 2;
+  line-height: 1;
+  margin-left: 3vw;
+}
+
+@media (max-width: 768px) {
+  .showcase-text {
+    font-size: 2rem;
+  }
+
+  .showcase-img {
+    height: 50vh;
+  }
 }

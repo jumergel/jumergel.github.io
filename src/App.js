@@ -9,8 +9,9 @@ import Algorithms from './pages/Algorithms';
 import Datasets from './pages/Datasets';
 import About from './pages/About/About.js'
 import homeButton from './images/white-transparent.png';
-import homeButtonAnimated from './images/white-animated-home.gif';
+import homeButtonAnimated from './images/dark-home-animated.gif';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import './shared-styling.css'; 
 
 function HoverHome() {
   const [isHovered, setIsHovered] = useState(false);
@@ -30,9 +31,9 @@ function HoverHome() {
 function App() {
  return (
    <Router>
-     <div className ="App">
+     <div className ="App basic">
        {/* Nav bar */}
-       <Navbar className="custom-navbar" style={{ backgroundColor: '#282c34' }}>
+       <Navbar className="custom-navbar" style={{ backgroundColor: '#97b1d1' }}>
          <Container fluid>
            <Navbar.Brand as={Link} to="/">
              <HoverHome />
@@ -40,9 +41,9 @@ function App() {
            <Nav className="me-auto">
            {/* <Nav.Link as={Link} to="/"><HoverHome /></Nav.Link> */}
            <Nav.Link as={Link} to="/about">About</Nav.Link>
-           <Nav.Link as={Link} to="/pages/Websites">AI Webpages</Nav.Link>
-           <Nav.Link as={Link} to="/pages/Algorithms">ML Models</Nav.Link>
-           <Nav.Link as={Link} to="/pages/Datasets">Data Sets</Nav.Link>
+           <Nav.Link as={Link} to="/pages/Websites">My Projects</Nav.Link>
+           <Nav.Link as={Link} to="/pages/Algorithms">Academics</Nav.Link>
+           <Nav.Link as={Link} to="/pages/Datasets">Webmap</Nav.Link>
            </Nav>
          </Container>
        </Navbar>
