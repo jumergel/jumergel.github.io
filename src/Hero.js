@@ -3,6 +3,7 @@ import './Hero.css';
 import heroImg from './images/bird.avif';
 import portrait from './images/portrait.png';
 import { useNavigate } from 'react-router-dom';
+import './shared-styling.css'; 
 
 
 export default function Hero() {
@@ -42,7 +43,6 @@ export default function Hero() {
                 src={portrait}
                 alt="Portrait"
                 className="hero-img"
-
               />
             </div>
           </Col>

@@ -4,14 +4,15 @@ import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Hero from './Hero.js';
 import Home from './Home.js';
-import Websites from './pages/Websites';
-import Algorithms from './pages/Algorithms';
-import Datasets from './pages/Datasets';
+import Websites from './pages/Projects.js';
+import Algorithms from './pages/Academics.js';
+import Datasets from './pages/Webmap.js';
 import About from './pages/About/About.js'
 import homeButton from './images/white-transparent.png';
 import homeButtonAnimated from './images/dark-home-animated.gif';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './shared-styling.css'; 
+import Footer from './Footer';
 
 function HoverHome() {
   const [isHovered, setIsHovered] = useState(false);
@@ -61,6 +62,7 @@ function App() {
          <Route path="/pages/Algorithms" element={<Algorithms />} />
           <Route path="/pages/Datasets" element={<Datasets />} />
        </Routes>
+       <Footer />
      </div>
    </Router>
  );
