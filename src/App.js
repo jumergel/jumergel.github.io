@@ -4,9 +4,9 @@ import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Hero from './Hero.js';
 import Home from './Home.js';
-import Websites from './pages/Projects.js';
-import Algorithms from './pages/Academics.js';
-import Datasets from './pages/Webmap.js';
+import Projects from './pages/Projects.js';
+import Academics from './pages/Academics.js';
+import Webmap from './pages/Webmap.js';
 import About from './pages/About/About.js'
 import homeButton from './images/white-transparent.png';
 import homeButtonAnimated from './images/dark-home-animated.gif';
@@ -17,7 +17,6 @@ import Footer from './Footer';
 function HoverHome() {
   const [isHovered, setIsHovered] = useState(false);
 
-
  return (
    <img
      src={isHovered ? homeButtonAnimated : homeButton}
@@ -27,7 +26,6 @@ function HoverHome() {
      onMouseLeave={() => setIsHovered(false)}
    />
  )}
-
 
 function App() {
  return (
@@ -42,14 +40,12 @@ function App() {
            <Nav className="me-auto">
            {/* <Nav.Link as={Link} to="/"><HoverHome /></Nav.Link> */}
            <Nav.Link as={Link} to="/about">About</Nav.Link>
-           <Nav.Link as={Link} to="/pages/Websites">My Projects</Nav.Link>
-           <Nav.Link as={Link} to="/pages/Algorithms">Academics</Nav.Link>
-           <Nav.Link as={Link} to="/pages/Datasets">Webmap</Nav.Link>
+           <Nav.Link as={Link} to="/pages/Projects">My Projects</Nav.Link>
+           <Nav.Link as={Link} to="/pages/Academics">Academics</Nav.Link>
+           <Nav.Link as={Link} to="/pages/Webmap">Webmap</Nav.Link>
            </Nav>
          </Container>
        </Navbar>
-
-
        <Routes>
          <Route path="/" element={
            <>
@@ -57,10 +53,10 @@ function App() {
              <Home />
            </>
          } />
-         <Route path="/about" element={<About />} />
-         <Route path="/pages/Websites" element={<Websites />} />
-         <Route path="/pages/Algorithms" element={<Algorithms />} />
-          <Route path="/pages/Datasets" element={<Datasets />} />
+         <Route path="/about" element={<About/>} />
+         <Route path="/pages/Projects" element={<Projects/>} />
+         <Route path="/pages/Academics" element={<Academics/>} />
+          <Route path="/pages/Webmap" element={<Webmap/>} />
        </Routes>
        <Footer />
      </div>

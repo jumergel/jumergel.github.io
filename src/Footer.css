@@ -1,7 +1,7 @@
 /* src/Footer.css */
 .custom-footer {
     background-color: inherit;
-    color: rgba(255, 255, 255, 0.7);
+    color: #282c34;
     text-align: center;
     padding: 1rem 0;
     font-size: 0.9rem;
@@ -10,7 +10,7 @@
   
   .custom-footer hr {
     border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid #9ca3b3;
     margin: 0 auto 0.5rem;
     width: 90%;
   }
@@ -24,3 +24,6 @@
     border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
   
+  p {
+    margin-top: 1.8rem;
+  }

@@ -31,6 +31,23 @@
   display: block;
 }
 
+.showcase-img {
+  transition: transform 0.3s ease;
+}
+
+.showcase-img:hover {
+  transform: scale(1.05); 
+}
+
+
+.custom-footer {
+  color: #f0f3f7;
+}
+
+.custom-footer hr {
+  border-top: 1px solid #f0f3f7;
+}
+
 .showcase-text {
   position: absolute;
   top: 5%;
@@ -52,3 +69,13 @@
     height: 50vh;
   }
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #282c34 !important;
+  overflow-x: hidden;
+}
+
+
