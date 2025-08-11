@@ -17,9 +17,9 @@
 
 .showcase-card {
   position: relative;
-  padding: 0;
+  padding: 0; 
   margin: 0;  
-  overflow: hidden;
+  overflow: visible;
 }
 
 .showcase-img {
@@ -29,14 +29,14 @@
   height: 85%;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s ease;
+  overflow: hidden;
 }
 
-.showcase-img {
-  transition: transform 0.3s ease;
-}
 
 .showcase-img:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 
