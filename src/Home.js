@@ -14,14 +14,14 @@ export default function Home() {
     <Container fluid className="showcase-section basic">
     <Row className="g-0" >
       <Col md={4} className="d-flex justify-content-end showcase-card">
-        <img src={img1} alt="About Me" className="showcase-img" style={{ marginLeft: '5vw' }}  />
+        <img src={img1} alt="About Me" className="showcase-img" style={{ marginLeft: '5vw' }} onClick={() => navigate('about')} />
         <div className="showcase-text">About<br />Me</div>
       </Col>
       <Col className="showcase-card">
-        <img src={img2} alt="Academics" className="showcase-img"  style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />
+        <img src={img2} alt="Academics" className="showcase-img"  style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }} onClick={() => navigate('academics')} />
       </Col>
       <Col className="showcase-card">
-        <img src={img3} alt="My Projects" className="showcase-img"  />
+        <img src={img3} alt="My Projects" className="showcase-img" onClick={() => navigate('projects')}  />
         <div className="showcase-text" style={{marginTop: '72vh', marginLeft: '5vw'}}>My<br />Projects</div>
       </Col>
     </Row>

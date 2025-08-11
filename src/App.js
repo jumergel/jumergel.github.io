@@ -7,7 +7,7 @@ import Home from './Home.js';
 import Projects from './pages/Projects.js';
 import Academics from './pages/Academics.js';
 import Webmap from './pages/Webmap.js';
-import About from './pages/About/About.js'
+import About from './pages/About.js'
 import homeButton from './images/white-transparent.png';
 import homeButtonAnimated from './images/dark-home-animated.gif';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
@@ -40,9 +40,9 @@ function App() {
            <Nav className="me-auto">
            {/* <Nav.Link as={Link} to="/"><HoverHome /></Nav.Link> */}
            <Nav.Link as={Link} to="/about">About</Nav.Link>
-           <Nav.Link as={Link} to="/pages/Projects">My Projects</Nav.Link>
-           <Nav.Link as={Link} to="/pages/Academics">Academics</Nav.Link>
-           <Nav.Link as={Link} to="/pages/Webmap">Webmap</Nav.Link>
+           <Nav.Link as={Link} to="/projects">My Projects</Nav.Link>
+           <Nav.Link as={Link} to="/academics">Academics</Nav.Link>
+           <Nav.Link as={Link} to="/webmap">Webmap</Nav.Link>
            </Nav>
          </Container>
        </Navbar>
@@ -54,9 +54,9 @@ function App() {
            </>
          } />
          <Route path="/about" element={<About/>} />
-         <Route path="/pages/Projects" element={<Projects/>} />
-         <Route path="/pages/Academics" element={<Academics/>} />
-          <Route path="/pages/Webmap" element={<Webmap/>} />
+         <Route path="/projects" element={<Projects/>} />
+         <Route path="/academics" element={<Academics/>} />
+          <Route path="/webmap" element={<Webmap/>} />
        </Routes>
        <Footer />
      </div>
