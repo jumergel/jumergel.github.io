@@ -11,6 +11,7 @@ export default function Home() {
   const navigate = useNavigate();
 
   return (
+    <>
     <Container fluid className="showcase-section basic">
     <Row className="g-0" >
       <Col md={4} className="d-flex justify-content-end showcase-card">
@@ -28,5 +29,36 @@ export default function Home() {
     
 
   </Container>
+
+  <Container fluid className="contact-section basic" style={{ padding: '4rem 2rem', backgroundColor: '#1f2227', color: 'white' }}>
+        <Row>
+          <Col md={{ span: 6, offset: 3 }} style={{ textAlign: 'center' }}>
+          <br /> <br /><br /> <br /> <br /><br />
+          <div className="title-text">Contact</div>
+          <p> Phone: 609-553-5319 <br />
+          Work email: jm.mergel@gmail.com <br />
+          School email: jmergel@utexas.edu </p>
+        
+   
+  <div className="social-links">
+    <a href="https://www.linkedin.com/in/juliamergel" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <i className="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/jumergel" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <i className="fab fa-github"></i>
+    </a>
+    <a href="https://www.instagram.com/lysitsa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <i className="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.youtube.com/watch?v=Qjk8iVr3QZ0&list=PLrhjlVPa_TboZsFVKOmCLWaiHHVZRgvOc" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+      <i className="fab fa-youtube"></i>
+    </a>
+  </div>
+</Col>
+
+        </Row>
+      </Container>
+    </>
+
   );
 }

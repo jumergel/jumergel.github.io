@@ -11,8 +11,15 @@
     font-weight:900
 }
 
+
 .showcase-section {
-  background-color: #282c34;
+  background-color: #282c34; /* lighter gray */
+  border-radius: 0 0 1500px 1500px / 0 0 150px 150px;
+
+  padding-bottom: 5rem; 
+  position: relative;
+  z-index: 1;
+
 }
 
 .showcase-card {
@@ -40,12 +47,34 @@
 }
 
 
-.custom-footer {
+/* .custom-footer {
   color: #f0f3f7;
 }
 
 .custom-footer hr {
   border-top: 1px solid #f0f3f7;
+} */
+.contact-section {
+  background-color: #1f2227; /* your dark background */
+  padding: 5rem 0;
+  text-align: center;
+  color: white;
+  margin-top: -8rem; /* negative margin to pull it up under the curve */
+}
+
+.contact-section p{
+  font-size: 1.4rem;
+}
+
+.title-text {
+  top: 5%;
+  left: 5%;
+  color: white;
+  font-size: 5rem;
+  font-weight: 600;
+  z-index: 2;
+  line-height: 1;
+  margin-left: 3vw;
 }
 
 .showcase-text {
