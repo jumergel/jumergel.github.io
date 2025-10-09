@@ -23,6 +23,7 @@ export default function About() {
       <Container className="py-5">
         <h1 className="mb-4 text-center">Experience</h1>
         <p>Please see my resume: <a href="https://docs.google.com/document/d/1VrelxX6Bv1ghKwh_gz-P3fmNR4_bVHgjSQ2ZtdeBUjk/edit?usp=sharing" target="_blank">Resume</a></p>
+        <p> Or access my academics webpage <a href="https://jumergel.github.io/academics" target="_blank">My Experiences</a></p>
       </Container>
 
       <Container className="py-5">
