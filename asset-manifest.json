@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/My-React-Website/static/css/main.378a25f4.css",
-    "main.js": "/My-React-Website/static/js/main.ce832427.js",
-    "static/js/453.557ad70b.chunk.js": "/My-React-Website/static/js/453.557ad70b.chunk.js",
-    "static/media/lavender-ai.jpg": "/My-React-Website/static/media/lavender-ai.0c10e0f75e7618fc740d.jpg",
-    "index.html": "/My-React-Website/index.html",
-    "main.378a25f4.css.map": "/My-React-Website/static/css/main.378a25f4.css.map",
-    "main.ce832427.js.map": "/My-React-Website/static/js/main.ce832427.js.map",
-    "453.557ad70b.chunk.js.map": "/My-React-Website/static/js/453.557ad70b.chunk.js.map"
+    "main.css": "/static/css/main.51514aea.css",
+    "main.js": "/static/js/main.a6df5754.js",
+    "static/js/453.557ad70b.chunk.js": "/static/js/453.557ad70b.chunk.js",
+    "static/media/wakesurfing.jpg": "/static/media/wakesurfing.06524daaf7b2bff2de74.jpg",
+    "static/media/cs-building.jpg": "/static/media/cs-building.58a10ace3fe92ec3dbeb.jpg",
+    "static/media/portrait.png": "/static/media/portrait.c5e2f83d063ca945fdda.png",
+    "static/media/time.jpg": "/static/media/time.e480600af3421ae23778.jpg",
+    "static/media/bird.avif": "/static/media/bird.5eedf98b33112d70845f.avif",
+    "index.html": "/index.html",
+    "main.51514aea.css.map": "/static/css/main.51514aea.css.map",
+    "main.a6df5754.js.map": "/static/js/main.a6df5754.js.map",
+    "453.557ad70b.chunk.js.map": "/static/js/453.557ad70b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.378a25f4.css",
-    "static/js/main.ce832427.js"
+    "static/css/main.51514aea.css",
+    "static/js/main.a6df5754.js"
   ]
 }
