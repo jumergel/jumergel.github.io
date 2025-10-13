@@ -1,0 +1,110 @@
+/* Styling for Bottom Half of Home Page -JM */
+
+
+
+.intro-screen p {
+    max-width: 50vw;
+  
+  }
+
+.intro-screen h1 {
+    font-weight:900
+}
+
+
+.showcase-section {
+  background-color: #282c34; /* lighter gray */
+  border-radius: 0 0 1500px 1500px / 0 0 150px 150px;
+
+  padding-bottom: 5rem; 
+  position: relative;
+  z-index: 1;
+
+}
+
+.showcase-card {
+  position: relative;
+  padding: 0; 
+  margin: 0;  
+  overflow: visible;
+}
+
+.showcase-img {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  width: 85%;
+  height: 85%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+
+.showcase-img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
+/* .custom-footer {
+  color: #f0f3f7;
+}
+
+.custom-footer hr {
+  border-top: 1px solid #f0f3f7;
+} */
+.contact-section {
+  background-color: #1f2227; /* your dark background */
+  padding: 5rem 0;
+  text-align: center;
+  color: white;
+  margin-top: -8rem; /* negative margin to pull it up under the curve */
+}
+
+.contact-section p{
+  font-size: 1.4rem;
+}
+
+.title-text {
+  top: 5%;
+  left: 5%;
+  color: white;
+  font-size: 5rem;
+  font-weight: 600;
+  z-index: 2;
+  line-height: 1;
+  margin-left: 3vw;
+}
+
+.showcase-text {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  color: white;
+  font-size: 5rem;
+  font-weight: 600;
+  z-index: 2;
+  line-height: 1;
+  margin-left: 3vw;
+}
+
+@media (max-width: 768px) {
+  .showcase-text {
+    font-size: 1.8rem;
+  }
+
+  .showcase-img {
+    height: 50vh;
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #282c34 !important;
+  overflow-x: hidden;
+}
+
+
