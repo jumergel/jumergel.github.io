@@ -46,6 +46,14 @@ h1,h2,h3 {
 .page-styling{
   padding: 3vh;
 }
+.page-styling h2{
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+}
+
+.page-styling em{
+  margin-left: 1vw;
+}
 
 .page-styling p, h1, h2, h3 {
   margin: 0 auto; 

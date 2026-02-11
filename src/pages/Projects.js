@@ -42,7 +42,7 @@ export default function Projects() {
                   <Card.Title>{item.title}</Card.Title>
                   <div className="mt-2">
                   <div className = "project-card">
-                  <Card.Text>{item.description}</Card.Text>
+                  <Card.Text style={{ paddingLeft: "25px", paddingTop: "10px" }}>{item.description}</Card.Text>
                   </div>
                     {item.tags.map((tag, i) => (
                       <Badge 

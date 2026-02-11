@@ -1,0 +1,106 @@
+/* ===== Hover card background + right-side genre label (old-site behavior) ===== */
+
+.category {
+    position: relative;
+    isolation: isolate;          /* keeps pseudo-elements layered correctly */
+    border-radius: 24px;         /* closer to your old rounded look */
+  }
+  
+  /* Background “card” that appears on hover */
+  .category::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 24px;
+    opacity: 0;
+    transform: scale(0.985);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    z-index: -1;                 /* behind the text inside this box */
+  }
+  
+  /* Show background on hover */
+  .category:hover::before {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  /* The big white genre text shown on hover (RIGHT SIDE inside the box) */
+  .category::after {
+    content: "";
+    position: absolute;
+    right: 7%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.92);
+    font-weight: 700;
+    font-size: clamp(1.6rem, 3vw, 3.2rem); /* scales like your old one */
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+    z-index: 1;                  /* above background */
+  }
+  
+  /* Show label on hover */
+  .category:hover::after {
+    opacity: 1;
+  }
+  
+  /* Optional: slight lift like the old site feel (remove if you want none) */
+  .category:hover {
+    transform: translateY(-2px);
+    transition: transform 0.15s ease;
+  }
+  
+  /* ===== Genre colors + label text ===== */
+  
+  .category.life::before {
+    background-color: #b1c9dd;
+  }
+  .category.life:hover::after {
+    content: "Life";
+  }
+  
+  .category.psychological-thriller::before {
+    background-color: #ffa3a3;
+  }
+  .category.psychological-thriller:hover::after {
+    content: "Psychological Thriller";
+  }
+  
+  .category.heartwarming-comedy::before {
+    background-color: #fae484;
+  }
+  .category.heartwarming-comedy:hover::after {
+    content: "Heartwarming Comedy";
+  }
+  
+  .category.surf::before {
+    background-color: #b3e3cf;
+  }
+  .category.surf:hover::after {
+    content: "Surf";
+  }
+  
+  .category.romance::before {
+    background-color: #fad2e7;
+  }
+  .category.romance:hover::after {
+    content: "Romance";
+  }
+  
+  .category.true-story::before {
+    background-color: #fae2d2;
+  }
+  .category.true-story:hover::after {
+    content: "True Story";
+  }
+  
+  .category.artistic::before {
+    background-color: #e8d2fa;
+  }
+  .category.artistic:hover::after {
+    content: "Artistic";
+  }
+  

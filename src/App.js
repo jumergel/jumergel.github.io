@@ -11,6 +11,8 @@ import Academics from './pages/Academics.js';
 import Webmap from './pages/Webmap.js';
 import About from './pages/About.js';
 import Piano from './pages/my-interests/Piano.js';
+import Reading from './pages/my-interests/Reading.js';
+import Movies from './pages/my-interests/Movies.js';
 
 import homeButton from './images/white-transparent.png';
 import homeButtonAnimated from './images/dark-home-animated.gif';
@@ -124,6 +126,8 @@ function App() {
           <Route path="/webmap" element={<Webmap />} />
           <Route path="/interests" element={<Interests />} />
           <Route path="/interests/piano" element={<Piano />} />
+          <Route path="/interests/reading" element={<Reading />} />
+          <Route path="/interests/movies" element={<Movies />} />
         </Routes>
 
         <Footer />

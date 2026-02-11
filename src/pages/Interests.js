@@ -5,8 +5,19 @@ import { useNavigate, Link } from 'react-router-dom';
 
 const interestData = [
   {
-    title: "Piano",
-    tags: ["Music"]
+    title: "Music",
+    tags: ["Piano", "Violin", "Classical"],
+    link: "piano"
+  },
+  {
+    title: "Reading",
+    tags: ["Pyschological", "Philosophical", "Classics", "Nonfiction"],
+    link: "reading"
+  },
+  {
+    title: "Movies",
+    tags: ["Sci-fi", "Psychological Thrillers", "Classics", "Foreign Films", "Drama", "Comedy"],
+    link: "movies"
   }
   
 ];
@@ -21,25 +32,26 @@ export default function Interests() {
         <Row className="g-3">
           {interestData.map((item, idx) => (
             <Col key={idx} xs={12}>
-                <Link to="/interests/piano" className="clickable-card">
-                <Card className="rounded-card p-4" > 
-                    <Card.Body className="d-flex flex-column justify-content-center">
-                    <Card.Title>{item.title}</Card.Title>
-                    <div className="mt-2">
-                  
-                        {item.tags.map((tag, i) => (
-                        <Badge 
-                            key={i} 
-                            bg="secondary" 
-                            className="me-2"
-                        >
-                            {tag}
-                        </Badge>
-                        ))}
-                    </div>
-                    </Card.Body>
-                 </Card>
+                <Link to={`/interests/${item.link}`} className="clickable-card">
+                    <Card className="rounded-card p-4" > 
+                        <Card.Body className="d-flex flex-column justify-content-center">
+                        <Card.Title>{item.title}</Card.Title>
+                        <div className="mt-2">
+                    
+                            {item.tags.map((tag, i) => (
+                            <Badge 
+                                key={i} 
+                                bg="secondary" 
+                                className="me-2"
+                            >
+                                {tag}
+                            </Badge>
+                            ))}
+                        </div>
+                        </Card.Body>
+                    </Card>
                  </Link>
+                 
             </Col>
           ))}
         </Row>
