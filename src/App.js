@@ -14,6 +14,8 @@ import homeButtonAnimated from './images/dark-home-animated.gif';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './shared-styling.css';
 import Footer from './Footer';
+import ScrollToTop from "./components/ScrollToTop";
+
 
 function HoverHome() {
   const [isHovered, setIsHovered] = useState(false);
@@ -35,6 +37,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop /> 
       <div className="App basic">
         {/* Nav bar */}
         <Navbar className="custom-navbar" style={{ backgroundColor: '#97b1d1' }}>
