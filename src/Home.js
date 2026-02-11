@@ -6,6 +6,7 @@ import img2 from './images/time.jpg';
 import img3 from './images/cs-building.jpg';
 import neurodexphoto from './images/lavender_ai_photo.avif';
 import traveldiaryphoto from './images/previewimage_traveldiary.png';
+import quizhavenphoto from './images/plant.png';
 import pasteltree from './images/pastel_tree.jpg';
 import './shared-styling.css';  // adjust path as needed
 import ProjectCarousel from "./ProjectCarousel";
@@ -51,6 +52,11 @@ export default function Home() {
                 techLine:"Swift, Figma, XCode, ChatGPT API, Firebase",
                 imageUrl: traveldiaryphoto, 
                 title:"travel diary" },
+                { id:"Quiz Haven", 
+                  description: "An android studio application that takes your notes and creates a study set for you; generates quizzes, takes the results, and personalizes teaching according to your performance. ",
+                  techLine:"Kotlin, Jetpack Compose, Android Studio, Gemini API, Firebase",
+                  imageUrl: quizhavenphoto, 
+                  title:"quiz haven" },
                 {id: "SeeMore",
                 description:"see more coming soon ...",
                 imageUrl: pasteltree

@@ -6,9 +6,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Hero from './Hero.js';
 import Home from './Home.js';
 import Projects from './pages/Projects.js';
+import Interests from './pages/Interests.js';
 import Academics from './pages/Academics.js';
 import Webmap from './pages/Webmap.js';
 import About from './pages/About.js';
+import Piano from './pages/my-interests/Piano.js';
+
 import homeButton from './images/white-transparent.png';
 import homeButtonAnimated from './images/dark-home-animated.gif';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
@@ -119,6 +122,8 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/academics" element={<Academics />} />
           <Route path="/webmap" element={<Webmap />} />
+          <Route path="/interests" element={<Interests />} />
+          <Route path="/interests/piano" element={<Piano />} />
         </Routes>
 
         <Footer />

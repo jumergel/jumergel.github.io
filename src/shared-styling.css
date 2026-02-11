@@ -6,24 +6,8 @@ html, body, #root {
   padding: 0;
   min-height: 100vh;
   background: linear-gradient(to bottom, #f5f6fb, #f5f7fd);
-}
+  font-family: 'Cormorant Garamond', serif;
 
-.basic {
-  font-family: 'UoqMunThenKhung', sans-serif;
-}
-
-.page-styling p {
-  padding-left: 12rem;
-  padding-right: 10rem;
-}
-
-.default-card {
-  border-radius: '12px';
-  color: #282c34;
-}
-
-img {
-  border-radius: 1.5rem !important;
 }
 
 html, body {
@@ -33,12 +17,60 @@ html, body {
   color: #282c34;
   background-color: #edf1fb;
   overflow-x: hidden;
+  font-family: 'Cormorant Garamond', serif;
+
 }
-.project-card {
-  margin-left: -12vw;
-  margin-top: -2vh;
-  padding-bottom: 1vh;
+
+.basic {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+
 }
+
+body, p{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+h1,h2,h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+
+
+
+.page-styling{
+  padding: 3vh;
+}
+
+.page-styling p, h1, h2, h3 {
+  margin: 0 auto; 
+  width: 70%;
+}
+.page-styling  h1, h2, h3 {
+  margin-top: 5vh; 
+}
+.item-styling {
+  margin: 0 auto; 
+  width: 70%;
+}
+
+
+.default-card {
+  border-radius: '50px';
+  color: #282c34;
+}
+
+img {
+  border-radius: 1.5rem !important;
+}
+
+
+
 
 
 /* CAROUSEL */
@@ -76,12 +108,14 @@ html, body {
   text-align:center;
   color:#fff;
   padding-bottom: 5vh;
+  
 }
 
 .carousel-title{
   margin:0 0 6px;
   font-size:clamp(28px,5vw,40px);
-  font-weight:700
+  font-weight:700;
+  margin: 0 auto; 
 }
 
 .carousel-description { 
@@ -108,3 +142,40 @@ html, body {
 .carousel-dots{position:absolute;left:50%;bottom:12px;transform:translateX(-50%);display:flex;gap:8px}
 .carousel-dot{width:34px;height:6px;border:0;border-radius:6px;background:rgba(255,255,255,.5);opacity:.6;cursor:pointer}
 .carousel-dot.on{opacity:1;background:#fff;width:46px}
+
+/* ------------------------------ */
+/* UNIVERSAL CARD BASE STYLING    */
+/* ------------------------------ */
+.project-card { /*inner section*/
+  margin-left: -12vw;
+  margin-top: -2vh;
+  padding-bottom: 1vh;
+}
+
+.rounded-card {
+  border-radius: 50px;
+  width: 75%;
+  margin: 0 auto; 
+  transition: 
+    box-shadow 0.2s ease,
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+/* -------------------------------- */
+/* Only clickable cards glow blue   */
+/* -------------------------------- */
+
+.clickable-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.clickable-card:hover .rounded-card {
+  box-shadow: 
+    0 0 0 3px rgba(151, 177, 209, 0.65), 
+    0 12px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
+  cursor: pointer;
+}

@@ -37,7 +37,7 @@ export default function Projects() {
           {projectData.map((item, idx) => (
             <Col key={idx} xs={12}>
 
-              <Card className="flex-row align-items-center p-3"  onClick={() => navigate('/my-projects/NeuroDex')}> 
+              <Card className="rounded-card p-4"  onClick={() => navigate('/my-projects/NeuroDex')}> 
                 <Card.Body className="d-flex flex-column justify-content-center">
                   <Card.Title>{item.title}</Card.Title>
                   <div className="mt-2">
