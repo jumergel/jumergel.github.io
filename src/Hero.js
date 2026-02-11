@@ -4,6 +4,7 @@ import heroImg from './images/bird.avif';
 import portrait from './images/portrait.png';
 import { useNavigate } from 'react-router-dom';
 import './shared-styling.css'; 
+import DecryptedText from './components/DecryptedText'; 
 
 
 export default function Hero() {
@@ -29,11 +30,21 @@ export default function Hero() {
       <Container fluid >
         <Row>
           <Col className="hero-styling d-flex flex-column justify-content-center basic ">   
-            <h1  style={{ fontWeight: 'bold' }} className="align-items-end">
-              Julia Mergel.
-            </h1>
-            <p style={{  marginBottom: '30px' }} >
-              Mathematics & Computer Science <br></br> Double Major at UT Austin.
+          <h1 style={{ fontWeight: 'bold' }} className="align-items-end">
+          <DecryptedText
+            text={'Julia Mergel.'}
+            animateOn="view"
+            sequential
+            revealDirection="start"
+            speed={50}
+            className="title-revealed"
+            encryptedClassName="title-encrypted"
+          />
+          
+          </h1>
+          <p style={{ marginBottom: '30px' }}>
+            Mathematics &amp; Computer Science<br />
+            Double Major at UT Austin.
             </p>
           </Col>
           <Col>

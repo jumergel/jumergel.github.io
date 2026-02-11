@@ -1,31 +1,20 @@
 
-
 App {
   text-align: center;
- }
- 
- .custom-navbar .nav-link {
-  margin-top: 0.2vh;
-  margin-left: 2vw;
-  color: white;
- }
- 
- .custom-navbar .nav-link:hover {
-  color: #282c34;
- }
- 
- .App-header {
+}
+
+.App-header {
   background-color: #282c34;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
-   align-items: left;
+  align-items: left;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
- }
- 
- .intro-screen {
+}
+
+.intro-screen {
   background-color: #282c34;
   width: 100%;
   min-height: 100vh;
@@ -35,4 +24,86 @@ App {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
- }
+}
+
+/* -------------------- */
+/* navbar dropdown      */
+/* -------------------- */
+
+/* default: no pill */
+.custom-navbar .hover-pill {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 26px;
+  border-radius: 999px;
+  background: transparent;
+  line-height: 1;
+}
+
+/* pill only on hover */
+.custom-navbar .hover-pill:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* pill text should stay white even on hover */
+.custom-navbar .hover-pill:hover,
+.custom-navbar .hover-pill:focus {
+  color: white !important;
+}
+
+/* remove Bootstrap caret arrow */
+.custom-navbar .dropdown-toggle::after {
+  display: none !important;
+}
+
+/* IMPORTANT: align Nav.Link pills to match the About pill (remove your 20px) */
+/* .custom-navbar .nav-link.hover-pill {
+  padding: 10px 26px !important;
+} */
+
+.custom-navbar .dropdown-toggle {
+  padding: 0;        
+}
+/* make sure that items have enough space even with dropdown menus*/
+.custom-navbar .dropdown-reserve {
+  margin-right: 10px; /* match dropdown max width */
+}
+
+.custom-navbar .rounded-dropdown .dropdown-menu {
+  margin-top: -1px !important;  /* adjust -6 to -12 until it touches */
+}
+
+
+/* Rounded dropdown bubble */
+.custom-navbar .rounded-dropdown .dropdown-menu {
+  background-color: #2f3031;
+  border-radius: 22px;
+  padding: 10px 0;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+  /* width fits longest item */
+  width: max-content;
+  min-width: max-content;
+}
+
+/* Dropdown items */
+.custom-navbar .rounded-dropdown .dropdown-item {
+  color: #f0f4fc;
+  padding: 12px 22px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* Light blue hover highlight */
+.custom-navbar .rounded-dropdown .dropdown-item:hover,
+.custom-navbar .rounded-dropdown .dropdown-item:focus {
+  background-color: #97b1d1;
+  color: white;
+}
+
+/* Remove Bootstrap active blue */
+.custom-navbar .rounded-dropdown .dropdown-item:active {
+  background-color: #97b1d1;
+}

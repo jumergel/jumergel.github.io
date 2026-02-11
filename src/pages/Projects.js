@@ -13,6 +13,16 @@ const projectData = [
     title: "Travel Diary",
     description:"AI integrated travel planner for large groups.",
     tags: ["Application Development", "Swift", "AI"]
+  },
+  {
+    title: "Quiz Haven",
+    description:"A personalized AI-centered study tool that adapts teaching to the user and delivers personalized quizzes.",
+    tags: ["Application Development", "Kotlin", "Android Studio"]
+  },
+  {
+    title: "Toy Operating System",
+    description:"Built a toy operating system, with many core features built from scratch.",
+    tags: ["Operating Systems", "Multithreading", "C++", "C", "Assembly", "x86-64", "Interrupts", "File systems", "Virtual Memory", "System Calls", "Preemptive Scheduling", "Semaphores"]
   }
 ];
 

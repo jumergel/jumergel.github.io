@@ -13,11 +13,18 @@
 .hero-styling h1 {
   white-space: nowrap;
   font-size: 6.5rem;
+  margin-left: 3vw;
+  line-height: 1.2; 
+
 }
+
+
 
 .hero-styling p {
   margin-left: 3vw;
   font-size: 2rem;
+  line-height: 1.5;
+  
 }
 
 .hero-img-container {
