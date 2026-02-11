@@ -18,6 +18,11 @@ const interestData = [
     title: "Movies",
     tags: ["Sci-fi", "Psychological Thrillers", "Classics", "Foreign Films", "Drama", "Comedy"],
     link: "movies"
+  },
+  {
+    title: "Graphic Design",
+    tags: ["Flyers", "Logos"],
+    link: "graphic-design"
   }
   
 ];

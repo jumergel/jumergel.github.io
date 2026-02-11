@@ -13,6 +13,7 @@ import About from './pages/About.js';
 import Piano from './pages/my-interests/Piano.js';
 import Reading from './pages/my-interests/Reading.js';
 import Movies from './pages/my-interests/Movies.js';
+import GraphicDesign from './pages/my-interests/GraphicDesign.js';
 
 import homeButton from './images/white-transparent.png';
 import homeButtonAnimated from './images/dark-home-animated.gif';
@@ -128,6 +129,7 @@ function App() {
           <Route path="/interests/piano" element={<Piano />} />
           <Route path="/interests/reading" element={<Reading />} />
           <Route path="/interests/movies" element={<Movies />} />
+          <Route path="/interests/graphic-design" element={<GraphicDesign />} />
         </Routes>
 
         <Footer />
