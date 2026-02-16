@@ -142,10 +142,26 @@ img {
 
 .carousel-arrow{
   position:absolute;
-  top:50%;transform:translateY(-50%);
-  width:40px;height:40px;
-  border:0;border-radius:50%;
-  background:rgba(255,255,255,.14);color:#fff;font-size:26px;cursor:pointer}
+  top:50%;
+  transform:translateY(-50%);
+
+  width:40px;
+  height:40px;
+
+  display:flex; 
+  align-items:center; 
+  justify-content:center;
+
+  border:0;
+  border-radius:50%;
+  background:rgba(255,255,255,.14);
+  color:#fff;
+  font-size:26px;
+  line-height:1; 
+  padding-bottom: 0.7vh;
+  cursor:pointer;
+}
+
 .carousel-arrow.l{left:14px}.carousel-arrow.r{right:14px}
 .carousel-dots{position:absolute;left:50%;bottom:12px;transform:translateX(-50%);display:flex;gap:8px}
 .carousel-dot{width:34px;height:6px;border:0;border-radius:6px;background:rgba(255,255,255,.5);opacity:.6;cursor:pointer}

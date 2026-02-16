@@ -39,8 +39,15 @@ export default function Home() {
         <Row>
   
         <Col md={{ span: 8, offset: 2 }} style={{ textAlign: 'center' }}>
-        <div className="title-text" style= {{textAlign: 'left', paddingTop: '20vh'}}>My Projects</div>
-          <ProjectCarousel
+        <div className="title-text " style= {{textAlign: 'left', paddingTop: '20vh'}}>My Projects</div>
+        <div className="project-carousel">
+          <ProjectCarousel 
+            interval={5000}   // rotates every 5 seconds
+            pause="hover"     // stops when user hovers
+            touch={true}
+            indicators={true}
+            controls={true}
+
             slides={[
               { id:"Neurodex",
                 imageUrl: neurodexphoto,
@@ -62,7 +69,7 @@ export default function Home() {
                 imageUrl: pasteltree
                 }
             ]}
-          />
+          /></div>
           <br /><br /><br />
      
         </Col>
