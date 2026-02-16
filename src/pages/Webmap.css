@@ -1,0 +1,144 @@
+/* Container for the whole tree */
+.webmap-tree {
+    width: min(980px, 90%);
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+  
+  /* Root node row */
+  .webmap-root {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+    position: relative;
+  }
+  
+  /* Line going down from Home to the row of sections */
+  .webmap-root::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 28px;
+    background: rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Row of the 4 main sections */
+  .webmap-children {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
+    gap: 18px;
+    align-items: start;
+  }
+  
+  /* Horizontal connector line across the 4 sections */
+  .webmap-children::before {
+    content: "";
+    position: absolute;
+    left: 6%;
+    right: 6%;
+    top: -14px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Each branch gets a vertical connector down into its node */
+  .webmap-branch {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .webmap-branch::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 14px;
+    background: rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Node styling */
+  .webmap-node {
+    width: 100%;
+    max-width: 240px;
+    padding: 16px 14px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* Links */
+  .webmap-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .webmap-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: inline-block;
+  }
+  
+  .webmap-underline {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+  }
+  
+  .webmap-title:hover,
+  .webmap-child:hover {
+    opacity: 0.75;
+  }
+  
+  /* Child list under a section */
+  .webmap-list {
+    margin: 12px 0 0 0;
+    padding-left: 18px;
+    line-height: 1.8;
+  }
+  
+  .webmap-child {
+    font-size: 1.02rem;
+    font-weight: 500;
+  }
+  
+  .webmap-note {
+    opacity: 0.8;
+  }
+  
+  /* Responsive */
+  @media (max-width: 980px) {
+    .webmap-children {
+      grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+  
+    .webmap-children::before {
+      left: 10%;
+      right: 10%;
+    }
+  }
+  
+  @media (max-width: 560px) {
+    .webmap-children {
+      grid-template-columns: 1fr;
+    }
+  
+    .webmap-children::before {
+      display: none; 
+    }
+  
+    .webmap-branch::before {
+      display: none;
+    }
+  
+    .webmap-root::after {
+      display: none;
+    }
+  }
+  
