@@ -42,6 +42,9 @@ App {
   border-radius: 999px;
   background: transparent;
   line-height: 1;
+  font-family: 'Inter', sans-serif;
+  font-weight: 410;
+  font-size: 15px;
 }
 
 /* pill only on hover */
@@ -82,7 +85,7 @@ App {
 .custom-navbar .rounded-dropdown .dropdown-menu {
   background-color: #2f3031;
   border-radius: 22px;
-  padding: 10px 0;
+  padding: 12px 0;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 
@@ -93,6 +96,9 @@ App {
 
 /* Dropdown items */
 .custom-navbar .rounded-dropdown .dropdown-item {
+  font-family: 'Inter', sans-serif;
+  font-weight: 410;
+  font-size: 15px;
   color: #f0f4fc;
   padding: 12px 22px;
   background: transparent;

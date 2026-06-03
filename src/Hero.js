@@ -1,6 +1,6 @@
 import { Button, Container, Row, Col } from 'react-bootstrap';
 import './Hero.css';
-import heroImg from './images/bird.avif';
+import heroImg from './images/bird.png';
 import portrait from './images/portrait.png';
 import { useNavigate } from 'react-router-dom';
 import './shared-styling.css'; 
@@ -29,7 +29,8 @@ export default function Hero() {
         {/* Left: Overlay box */}
       <Container fluid >
         <Row>
-          <Col className="hero-styling d-flex flex-column justify-content-center basic ">   
+          <Col className="hero-styling d-flex flex-column justify-content-center basic ">  
+          <p className="details">PORTFOLIO</p> 
           <h1 style={{ fontWeight: 'bold' }} className="align-items-end">
           <DecryptedText
             text={'Julia Mergel.'}
@@ -42,7 +43,7 @@ export default function Hero() {
           />
           
           </h1>
-          <p style={{ marginBottom: '30px' }}>
+          <p className="details line" style={{ marginBottom: '30px' }}>
             Mathematics &amp; Computer Science<br />
             Double Major at UT Austin.
             </p>

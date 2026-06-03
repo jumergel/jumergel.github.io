@@ -1,9 +1,11 @@
 /* Styling for first Background Section on Home Page - JM */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
 .hero-styling {
   text-align: left;
   color: #282c34;
 
-  margin-top: -3vh;
+  margin-top: -10vh;
   margin-left: 14vw;
   margin-right: 0vw;
 
@@ -43,6 +45,19 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   margin-top: 14vh;
   margin-right: 5vw;
+}
+
+.hero-styling .details { /*porfolio and major*/
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  color: rgba(73, 92, 105, 0.7);
+}
+
+.line {
+  border-left: 3px solid rgba(73, 92, 105, 0.4);
+  padding-left: 17px;
 }
 
 @keyframes fadeIn {
