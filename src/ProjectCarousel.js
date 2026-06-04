@@ -43,10 +43,10 @@ export default function MiniHero({ slides, height = "58vh", interval = 5000 }) {
         </div>
       ))}
 
-      <button className="carousel-arrow l" onClick={() => go(-1)} aria-label="Previous slide">
+      <button className="carousel-arrow l arrow-btn" onClick={() => go(-1)} aria-label="Previous slide">
         ‹
       </button>
-      <button className="carousel-arrow r" onClick={() => go(1)} aria-label="Next slide">
+      <button className="carousel-arrow r arrow-btn" onClick={() => go(1)} aria-label="Next slide">
         ›
       </button>
 

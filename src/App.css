@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;700&display=swap');
+
 App {
   text-align: center;
 }
@@ -115,4 +117,9 @@ App {
 /* Remove Bootstrap active blue */
 .custom-navbar .rounded-dropdown .dropdown-item:active {
   background-color: #97b1d1;
+}
+
+/* at the bottom: */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
 }

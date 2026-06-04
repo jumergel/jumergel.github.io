@@ -71,7 +71,6 @@
   left: 5%;
   color: white;
   font-size: 5rem;
-  font-weight: 600;
   z-index: 2;
   line-height: 1;
   margin-left: 3vw;
@@ -82,11 +81,10 @@
   top: 5%;
   left: 5%;
   color: white;
-  font-size: 5rem;
-  font-weight: 600;
   z-index: 2;
   line-height: 1;
   margin-left: 3vw;
+
 }
 
 @media (max-width: 768px) {

@@ -21,14 +21,14 @@ export default function Home() {
     <Row className="g-0" >
       <Col md={4} className="d-flex justify-content-end showcase-card">
         <img src={img1} alt="About Me" className="showcase-img" style={{ marginLeft: '5vw' }} onClick={() => { navigate('/about');}} />
-        <div className="showcase-text">About<br />Me</div>
+        <div className="showcase-text title">About<br />Me</div>
       </Col>
       <Col className="showcase-card">
         <img src={img2} alt="My Projects" className="showcase-img"  style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }} onClick={() => navigate('/projects')} />
       </Col>
       <Col className="showcase-card">
         <img src={img3} alt="My Academics" className="showcase-img" onClick={() => navigate('/academics')}  />
-        <div className="showcase-text" style={{marginTop: '72vh', marginLeft: '1vw'}}>My<br />Academics</div>
+        <div className="showcase-text title" style={{marginTop: '72vh', marginLeft: '1vw'}}>My<br />Academics</div>
       </Col>
     </Row>
     
@@ -39,7 +39,7 @@ export default function Home() {
         <Row>
   
         <Col md={{ span: 8, offset: 2 }} style={{ textAlign: 'center' }}>
-        <div className="title-text " style= {{textAlign: 'left', paddingTop: '20vh'}}>My Projects</div>
+        <div className="title-text title" style= {{textAlign: 'left', paddingTop: '20vh'}}>My Projects</div>
         <div className="project-carousel">
           <ProjectCarousel 
             interval={5000}   // rotates every 5 seconds

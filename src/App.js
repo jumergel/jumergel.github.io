@@ -14,6 +14,11 @@ import Piano from './pages/my-interests/Piano.js';
 import Reading from './pages/my-interests/Reading.js';
 import Movies from './pages/my-interests/Movies.js';
 import GraphicDesign from './pages/my-interests/GraphicDesign.js';
+import NeuroDex from './pages/my-projects/NeuroDex.js';
+import QuizHaven from './pages/my-projects/QuizHaven.js';
+import SproutSystem from './pages/my-projects/SproutSystem.js';
+import ToyOS from './pages/my-projects/ToyOS.js';
+import TravelDiary from './pages/my-projects/TravelDiary.js';
 
 import homeButton from './images/white-transparent.png';
 import homeButtonAnimated from './images/dark-home-animated.gif';
@@ -130,6 +135,13 @@ function App() {
           <Route path="/interests/reading" element={<Reading />} />
           <Route path="/interests/movies" element={<Movies />} />
           <Route path="/interests/graphic-design" element={<GraphicDesign />} />
+
+          {/* /* PROJECT ROUTES */ }
+          <Route path="/my-projects/neurodex" element={<NeuroDex />} />
+          <Route path="/my-projects/quiz-haven" element={<QuizHaven />} />
+          <Route path="/my-projects/sprout-system" element={<SproutSystem />} />
+          <Route path="/my-projects/toy-os" element={<ToyOS />} />
+          <Route path="/my-projects/travel-diary" element={<TravelDiary />} />
         </Routes>
 
         <Footer />
