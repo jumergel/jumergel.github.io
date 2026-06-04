@@ -8,19 +8,20 @@ export default function Reading() {
       <h1 className="mb-4 text-center">Favorite Books</h1>
 
       {/* Currently Reading */}
-      <h2 className="reading-section">Currently Reading</h2>
+      <h2 className="subtitle">Currently Reading</h2>
+      <p><em>Anna Karenina</em> — Leo Tolstoy</p>
       <p><em>The Master</em> — Stanislaw Lem</p>
 
 
       {/* Recently Read */}
-      <h2 className="reading-section">Recently Read</h2>
+      <h2 className="subtitle">Recently Read</h2>
       <p><em>Solaris</em> — Stanislaw Lem</p>
       <p><em>The Master & Margarita</em> — Elena S. Bulgakova and Mikhail Bulgakov</p>
       <p><em>Operating Systems: Three Easy Pieces</em> — Andrea & Remzi Arpaci-Dusseau</p>
       <p><em>Dune</em> — Frank Herbert</p>
 
       {/* Favorites */}
-      <h2 className="reading-section">Past Favorites</h2>
+      <h2 className="subtitle">Past Favorites</h2>
 
       <div className="reading-columns">
         <p><em>1984</em> — George Orwell</p>

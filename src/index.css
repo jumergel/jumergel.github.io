@@ -32,8 +32,8 @@ code {
   font-size: 2rem;
   line-height: 1;
   transition: background-color 0.2s ease;
-  padding-bottom: 10px;  
-  padding-right: 8px;
+  padding-bottom: 5px;  
+  padding-right: 9px;
 }
 
 .arrow-btn:hover {
