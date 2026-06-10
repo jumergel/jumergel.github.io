@@ -4,6 +4,10 @@
     margin: 0 auto;
     padding-top: 10px;
   }
+
+  li {
+    margin-left: 1rem;
+  }
   
   /* Root node row */
   .webmap-root {

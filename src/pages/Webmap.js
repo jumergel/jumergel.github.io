@@ -9,7 +9,14 @@ const WEBMAP = {
   sections: [
     { label: "About", to: "/about", children: [] },
     { label: "Academics", to: "/academics", children: [] },
-    { label: "Projects", to: "/projects", children: [] },
+    { label: "Projects", to: "/projects", 
+        children: [
+          { label: "Operating Systems", to: "/my-projects/toy-os" },
+          { label: "NeuroDex", to: "/my-projects/neurodex" },
+          { label: "Travel Diary", to: "/my-projects/travel-diary" },
+          { label: "Sprout System", to: "/my-projects/sprout-system" },
+          { label: "Quiz Haven", to: "/my-projects/quiz-haven" },
+        ],},
     {
       label: "Interests",
       to: "/interests",
