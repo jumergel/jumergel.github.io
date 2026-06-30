@@ -3,11 +3,12 @@ import { FaFilm } from "react-icons/fa";
 import "../../shared-styling.css";
 import "./Movies.css";
 import letterboxdLogo from "../../images/letterboxd.png";
+import BackButton from '../../components/BackButton';
 
 
 export default function Movies() {
   return (
-    <Container className="page-styling py-5">
+    <Container className="page-styling py-5">      <BackButton />
       <h2 className="mb-4">Movies</h2>
 
       <p className="piano-text">Check out my letterboxd!</p>

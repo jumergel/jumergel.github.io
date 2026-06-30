@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Container, Row, Col, Badge } from 'react-bootstrap';
 import '../shared-styling.css';
+// import { useNavigate, Link } from 'react-router-dom';
 
 const academicData = [
   {
@@ -37,6 +38,7 @@ export default function Academics() {
         <Row className="g-3">
           {academicData.map((item, idx) => (
             <Col key={idx} xs={12}>
+              {/* <Link to={`/interests/${item.link}`} className="clickable-card"> */}
               <Card className="rounded-card p-4">
                 <Card.Body className="d-flex flex-column justify-content-center">
                   <Card.Title>{item.title}</Card.Title>
@@ -53,6 +55,7 @@ export default function Academics() {
                   </div>
                 </Card.Body>
               </Card>
+              {/* </Link> */}
             </Col>
           ))}
         </Row>

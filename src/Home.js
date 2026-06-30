@@ -2,7 +2,7 @@ import { Container, Row, Col} from 'react-bootstrap';
 import './Home.css';
 import { useNavigate } from 'react-router-dom';
 import img1 from './images/wakesurfing.jpg';         // replace with your image paths
-import img2 from './images/time.jpg';
+import img2 from './images/juliagradedited.png';
 import img3 from './images/cs-building.jpg';
 import neurodexphoto from './images/lavender_ai_photo.avif';
 import traveldiaryphoto from './images/previewimage_traveldiary.png';

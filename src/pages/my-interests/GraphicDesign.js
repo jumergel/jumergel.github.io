@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import "../../shared-styling.css";
 import "./GraphicDesign.css";
+import BackButton from '../../components/BackButton';
 
 // Your images are in: public/graphic-design/*
 const gisFlyers = [
@@ -44,7 +45,7 @@ function FlyerGrid({ items }) {
 
 export default function GraphicDesign() {
   return (
-    <Container className="page-styling py-5">
+    <Container className="page-styling py-5">  <BackButton />
       {/* This wrapper is what limits width to ~70% and centers */}
       <div className="graphicdesign-wrap">
         <h2 className="mb-2">Graphic Design</h2>

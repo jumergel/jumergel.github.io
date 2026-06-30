@@ -232,3 +232,62 @@ img {
   transform: translateY(-3px);
   cursor: pointer;
 }
+
+
+
+/* -------------------------------- */
+/* reading section's dropdown style   */
+/* -------------------------------- */
+
+.accordion-entry {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+  max-width: 850px;
+  margin-left: 14vw;
+  
+}
+
+.accordion-entry:first-child {
+  border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.accordion-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 4px 0;
+}
+
+.accordion-row .accordion-label {
+  margin-bottom: 0.5vh;
+  margin-left: -0.5vw; 
+}
+
+.accordion-chevron {
+  font-size: 18px;
+  color: #888;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  line-height: 1;
+  user-select: none;
+}
+
+.accordion-body {
+  padding: 0.25rem 0 0.85rem;
+}
+
+.accordion-body p {
+  font-size: 0.92rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 0.65rem;
+}
+
+.accordion-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Prevent column breaks mid-entry in multi-column layouts */
+.reading-columns .accordion-entry {
+  break-inside: avoid;
+}

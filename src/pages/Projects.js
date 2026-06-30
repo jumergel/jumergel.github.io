@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Container, Row, Col, Badge } from 'react-bootstrap';
 import '../shared-styling.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const projectData = [
   {
@@ -46,26 +46,25 @@ export default function Projects() {
         <Row className="g-3">
           {projectData.map((item, idx) => (
             <Col key={idx} xs={12}>
-
-              <Card className="rounded-card p-4"  onClick={() => navigate(item.route)}> 
-                <Card.Body className="d-flex flex-column justify-content-center">
-                  <Card.Title>{item.title}</Card.Title>
-                  <div className="mt-2">
-                  <div className = "project-card">
-                  <Card.Text style={{ paddingLeft: "25px", paddingTop: "10px" }}>{item.description}</Card.Text>
-                  </div>
-                    {item.tags.map((tag, i) => (
-                      <Badge 
-                        key={i} 
-                        bg="secondary" 
-                        className="me-2"
-                      >
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
-                </Card.Body>
-              </Card>
+                <Link to={item.route} className="clickable-card">
+  <Card className="rounded-card p-4">
+    <Card.Body className="d-flex flex-column justify-content-center">
+      <Card.Title>{item.title}</Card.Title>
+      <div className="mt-2">
+        <div className="project-card">
+          <Card.Text style={{ paddingLeft: "25px", paddingTop: "10px" }}>
+            {item.description}
+          </Card.Text>
+        </div>
+        {item.tags.map((tag, i) => (
+          <Badge key={i} bg="secondary" className="me-2">
+            {tag}
+          </Badge>
+        ))}
+      </div>
+    </Card.Body>
+  </Card>
+</Link>
             </Col>
           ))}
         </Row>
