@@ -8,7 +8,9 @@ import BackButton from '../../components/BackButton';
 
 export default function Movies() {
   return (
-    <Container className="page-styling py-5">      <BackButton />
+    <div className="page-styling">
+    <BackButton />
+    <Container className="py-5">
       <h2 className="mb-4">Movies</h2>
 
       <p className="piano-text">Check out my letterboxd!</p>
@@ -123,6 +125,6 @@ export default function Movies() {
         <p>Hugo</p>
         <p>Ponyo</p>
       </div>
-    </Container>
+    </Container> </div>
   );
 }

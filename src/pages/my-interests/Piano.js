@@ -5,7 +5,9 @@ import BackButton from '../../components/BackButton';
 
 export default function Piano() {
   return (
-    <Container className=" page-styling py-5">      <BackButton />
+    <div className="page-styling">
+    <BackButton />
+    <Container className="py-5">
       <h2 className="mb-4 ">My Piano</h2>
 
       <p className="piano-text">
@@ -40,6 +42,6 @@ export default function Piano() {
         <source src={pianoAudio} type="audio/mp3" />
       </audio>
       */}
-    </Container>
+    </Container> </div>
   );
 }

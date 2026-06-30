@@ -87,7 +87,9 @@ const pastFavorites = [
 
 export default function Reading() {
   return (
-    <Container className="basic py-5 page-styling"> <BackButton />
+    <div className="page-styling">
+    <BackButton />
+    <Container className="py-5">
       <h1 className="mb-4 text-center">Favorite Books</h1>
 
       <h2 className="subtitle">Currently Reading</h2>
@@ -106,6 +108,6 @@ export default function Reading() {
           <BookEntry key={b.title} {...b} />
         ))}
       </div>
-    </Container>
+    </Container></div>
   );
 }

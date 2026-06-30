@@ -45,7 +45,9 @@ function FlyerGrid({ items }) {
 
 export default function GraphicDesign() {
   return (
-    <Container className="page-styling py-5">  <BackButton />
+    <div className="page-styling">
+    <BackButton />
+    <Container className="py-5">
       {/* This wrapper is what limits width to ~70% and centers */}
       <div className="graphicdesign-wrap">
         <h2 className="mb-2">Graphic Design</h2>
@@ -63,6 +65,6 @@ export default function GraphicDesign() {
           <FlyerGrid items={locFlyers} />
         </div>
       </div>
-    </Container>
+    </Container></div>
   );
 }
