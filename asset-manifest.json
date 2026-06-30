@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.4beefc63.css",
-    "main.js": "/static/js/main.07a22502.js",
+    "main.css": "/static/css/main.cc688440.css",
+    "main.js": "/static/js/main.4137796e.js",
     "static/js/453.557ad70b.chunk.js": "/static/js/453.557ad70b.chunk.js",
     "static/media/wakesurfing.jpg": "/static/media/wakesurfing.06524daaf7b2bff2de74.jpg",
+    "static/media/juliagradedited.png": "/static/media/juliagradedited.e74f5c86928850ccf3f1.png",
     "static/media/cs-building.jpg": "/static/media/cs-building.58a10ace3fe92ec3dbeb.jpg",
     "static/media/portrait.png": "/static/media/portrait.c5e2f83d063ca945fdda.png",
     "static/media/bird.png": "/static/media/bird.62deb0e495aec65f102e.png",
     "static/media/previewimage_traveldiary.png": "/static/media/previewimage_traveldiary.7b3dd5881c3aa7efb3d4.png",
     "static/media/pastel_tree.jpg": "/static/media/pastel_tree.c8e98d1734ef69910117.jpg",
     "static/media/plant.png": "/static/media/plant.4ee939dae3ad58c8e742.png",
-    "static/media/time.jpg": "/static/media/time.e480600af3421ae23778.jpg",
     "static/media/lavender_ai_photo.avif": "/static/media/lavender_ai_photo.034f135fdc30ece51b5d.avif",
     "index.html": "/index.html",
-    "main.4beefc63.css.map": "/static/css/main.4beefc63.css.map",
-    "main.07a22502.js.map": "/static/js/main.07a22502.js.map",
+    "main.cc688440.css.map": "/static/css/main.cc688440.css.map",
+    "main.4137796e.js.map": "/static/js/main.4137796e.js.map",
     "453.557ad70b.chunk.js.map": "/static/js/453.557ad70b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4beefc63.css",
-    "static/js/main.07a22502.js"
+    "static/css/main.cc688440.css",
+    "static/js/main.4137796e.js"
   ]
 }
