@@ -3,6 +3,7 @@ import { Card, Container, Row, Col, Badge } from 'react-bootstrap';
 import '../../shared-styling.css';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import BackButton from '../../components/BackButton';
 
 export default function SproutSystem() {
     const navigate = useNavigate();

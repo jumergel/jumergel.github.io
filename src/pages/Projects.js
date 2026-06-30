@@ -7,8 +7,8 @@ const projectData = [
   {
     title: "Toy Operating System",
     description:"Built a toy operating system, with many core features built from scratch.",
-    tags: ["Operating Systems", "Multithreading", "Interrupts", "File systems", "Virtual Memory", "System Calls", "Preemptive Scheduling", "Semaphores"],
-    languageTags: ["C++", "C", "Assembly", "x86-64"],
+    tags: ["Operating Systems", "Multithreading", "Interrupts", "File systems", "Virtual Memory", "System Calls", "Preemptive Scheduling", "Semaphores", "x86-64"],
+    languageTags: ["C++", "C", "Assembly"],
     route: "/my-projects/toy-os"
   },
   {
