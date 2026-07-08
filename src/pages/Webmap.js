@@ -8,7 +8,12 @@ const WEBMAP = {
   home: { label: "Home", to: "/" },
   sections: [
     { label: "About", to: "/about", children: [] },
-    { label: "Academics", to: "/academics", children: [] },
+    { label: "Academics", to: "/academics", 
+        children: [
+          { label: "Differential Geometry", to: "/academics/differential-geometry" },
+          { label: "Case Competition", to: "/academics/mercer-case-competition" },
+        ] },
+
     { label: "Projects", to: "/projects", 
         children: [
           { label: "Operating Systems", to: "/my-projects/toy-os" },
