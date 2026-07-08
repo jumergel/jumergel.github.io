@@ -19,6 +19,7 @@ import QuizHaven from './pages/my-projects/QuizHaven.js';
 import SproutSystem from './pages/my-projects/SproutSystem.js';
 import ToyOS from './pages/my-projects/ToyOS.js';
 import TravelDiary from './pages/my-projects/TravelDiary.js';
+import MercerCaseCompetition from './pages/academics/MercerCaseCompetition';
 
 import homeButton from './images/white-transparent.png';
 import homeButtonAnimated from './images/dark-home-animated.gif';
@@ -135,6 +136,7 @@ function App() {
           <Route path="/interests/reading" element={<Reading />} />
           <Route path="/interests/movies" element={<Movies />} />
           <Route path="/interests/graphic-design" element={<GraphicDesign />} />
+          
 
           {/* /* PROJECT ROUTES */ }
           <Route path="/my-projects/neurodex" element={<NeuroDex />} />
@@ -142,6 +144,9 @@ function App() {
           <Route path="/my-projects/sprout-system" element={<SproutSystem />} />
           <Route path="/my-projects/toy-os" element={<ToyOS />} />
           <Route path="/my-projects/travel-diary" element={<TravelDiary />} />
+
+          {/* /* ACADEMIC ROUTES */ }
+          <Route path="/academics/mercer-case-competition" element={<MercerCaseCompetition />} />
         </Routes>
 
         <Footer />

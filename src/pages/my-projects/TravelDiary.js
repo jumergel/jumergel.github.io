@@ -12,24 +12,6 @@ export default function TravelDiary() {
     <BackButton />
       <Container className="py-5">
         <h1 className="mb-4 text-center">Travel Diary</h1>
-
-        { /* DEMO VIDEO */ }
-        {/* /* <div style={{ 
-            borderRadius: '24px', 
-            overflow: 'hidden',
-            width: '68.6%',        
-            // margin: '4rem auto 0'  /* centers it + adds top spacing */
-            // }}>
-            // <iframe
-            //     src=""
-            //     width="100%"
-            //     height="500"
-           
-            //     allowFullScreen
-            //     style={{ display: 'block' }}
-            // />
-            // </div> */}}
-        }
         <div
             style={{
                 width: '15.6%',

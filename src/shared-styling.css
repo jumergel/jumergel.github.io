@@ -92,6 +92,11 @@ li {
   width: 70%;
 }
 
+.text-narrow {
+  width: 49% !important; /*for more narrow pages*/
+  margin: 0 auto;
+}
+
 
 .default-card {
   border-radius: '50px';

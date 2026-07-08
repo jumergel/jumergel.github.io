@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Container, Row, Col, Badge } from 'react-bootstrap';
 import '../shared-styling.css';
-// import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const academicData = [
   {
@@ -18,7 +18,8 @@ const academicData = [
   },
   {
     title: "1st Place Mercer Case Competition",
-    tags: ["Competition", "Mathematics", "Actuarial Science", "Business"]
+    tags: ["Competition", "Mathematics", "Actuarial Science", "Business"],
+    route: "/academics/mercer-case-competition"
   },
   {
     title: "Women in Stem Mentor",
@@ -36,28 +37,31 @@ export default function Academics() {
       <Container className="py-5">
         <h1 className="mb-4 text-center">Academic Achievements</h1>
         <Row className="g-3">
-          {academicData.map((item, idx) => (
-            <Col key={idx} xs={12}>
-              {/* <Link to={`/interests/${item.link}`} className="clickable-card"> */}
+          {academicData.map((item, idx) => {
+            const card = (
               <Card className="rounded-card p-4">
                 <Card.Body className="d-flex flex-column justify-content-center">
                   <Card.Title>{item.title}</Card.Title>
                   <div className="mt-2">
                     {item.tags.map((tag, i) => (
-                      <Badge 
-                        key={i} 
-                        bg="secondary" 
-                        className="me-2"
-                      >
+                      <Badge key={i} bg="secondary" className="me-2">
                         {tag}
                       </Badge>
                     ))}
                   </div>
                 </Card.Body>
               </Card>
-              {/* </Link> */}
-            </Col>
-          ))}
+            );
+
+            return (
+              <Col key={idx} xs={12}>
+                {item.route
+                  ? <Link to={item.route} className="clickable-card">{card}</Link>
+                  : card
+                }
+              </Col>
+            );
+          })}
         </Row>
       </Container>
     </div>
