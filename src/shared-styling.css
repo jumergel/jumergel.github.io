@@ -87,6 +87,12 @@ li {
 .page-styling  h1, h2, h3 {
   margin-top: 5vh; 
 }
+
+/* to make individual pages start more near top of page */
+.page-styling .container {
+  padding-top: 0rem !important;
+}
+
 .item-styling {
   margin: 0 auto; 
   width: 70%;
