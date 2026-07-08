@@ -48,7 +48,6 @@ export default function Webmap() {
     <div className="page-styling">
       <Container className="py-5">
         <h1 className="mb-4 text-center smalltitle">Webmap</h1>
-
         <div className="webmap-tree">
           {/* ROOT */}
           <div className="webmap-root">
@@ -71,7 +70,7 @@ export default function Webmap() {
                   {section.children?.length > 0 && (
                     <ul className="webmap-list">
                       {section.children.map((child) => (
-                        <li key={child.label}>
+                        <li className="no-indent" key={child.label}>
                           <NodeLink to={child.to} className="webmap-child">
                             {child.label}
                           </NodeLink>

@@ -62,7 +62,12 @@ li {
   margin-left: 15rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
+}
 
+ul {
+  margin: 0 auto;
+  width: 70%;
+  padding-left: 1.5rem;  /* controls bullet indent */
 }
 
 
@@ -320,4 +325,11 @@ img {
 /* Prevent column breaks mid-entry in multi-column layouts */
 .reading-columns .accordion-entry {
   break-inside: avoid;
+}
+
+/* -------------------------------- */
+/*         WEBMAP STYLING           */
+/* -------------------------------- */
+.no-indent {
+  margin-left: 0 !important;
 }
