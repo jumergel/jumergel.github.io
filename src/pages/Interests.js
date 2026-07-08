@@ -5,26 +5,25 @@ import { useNavigate, Link } from 'react-router-dom';
 
 const interestData = [
   {
-    title: "Music",
-    tags: ["Piano", "Violin", "Classical"],
-    link: "piano"
-  },
-  {
     title: "Reading",
     tags: ["Pyschological", "Philosophical", "Classics", "Nonfiction"],
     link: "reading"
   },
   {
-    title: "Movies",
-    tags: ["Sci-fi", "Psychological Thrillers", "Classics", "Foreign Films", "Drama", "Comedy"],
-    link: "movies"
+    title: "Music",
+    tags: ["Piano", "Violin", "Classical"],
+    link: "piano"
   },
   {
     title: "Graphic Design",
     tags: ["Flyers", "Logos"],
     link: "graphic-design"
-  }
-  
+  },
+  {
+    title: "Movies",
+    tags: ["Sci-fi", "Psychological Thrillers", "Classics", "Foreign Films", "Drama", "Comedy"],
+    link: "movies"
+  } 
 ];
 
 export default function Interests() {

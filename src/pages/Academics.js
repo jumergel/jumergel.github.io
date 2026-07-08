@@ -10,17 +10,17 @@ const academicData = [
     route: "/academics/differential-geometry"
   },
   {
+    title: "1st Place Mercer Case Competition",
+    tags: ["Competition", "Mathematics", "Actuarial Science", "Business"],
+    route: "/academics/mercer-case-competition"
+  },
+  {
     title: "Operating Systems Overview",
     tags: ["Class Overview", "Computer Science"]
   },
   {
     title: "Operating Systems CSB Honors Teaching Assistant",
     tags: ["Work Experience", "Operating Systems", "Programming", "Presenting"]
-  },
-  {
-    title: "1st Place Mercer Case Competition",
-    tags: ["Competition", "Mathematics", "Actuarial Science", "Business"],
-    route: "/academics/mercer-case-competition"
   },
   {
     title: "Women in Stem Mentor",

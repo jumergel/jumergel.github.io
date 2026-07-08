@@ -12,6 +12,13 @@ const projectData = [
     route: "/my-projects/toy-os"
   },
   {
+    title: "Sprout System",
+    description:"Procedural plant generation in WebGL.",
+    tags: ["Graphics"],
+    languageTags: ["WebGL"],
+    route: "/my-projects/sprout-system"
+  },
+  {
     title: "NeuroDex",
     description: "Fullstack Website",
     tags: ["Software Engineering", "UI/UX", "AI"],
@@ -24,13 +31,6 @@ const projectData = [
     tags: ["Application Development", "AI"],
     languageTags: ["Swift"],
     route: "/my-projects/travel-diary"
-  },
-  {
-    title: "Sprout System",
-    description:"Procedural plant generation in WebGL.",
-    tags: ["Graphics"],
-    languageTags: ["WebGL"],
-    route: "/my-projects/sprout-system"
   },
   {
     title: "Quiz Haven",
