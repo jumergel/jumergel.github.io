@@ -28,7 +28,7 @@ export default function MercerCaseCompetition() {
                     />
                 </div> */}
                 <div style={{
-                    width: '68.6%',
+                    width: '48%',
                     margin: '2rem auto 0',
                     borderRadius: '24px',
                     overflow: 'hidden'
@@ -36,7 +36,7 @@ export default function MercerCaseCompetition() {
                     <img
                         src={mercerTeam}
                         alt="Mercer Case Competition Team"
-                        style={{ width: '70%', height: 'auto', display: 'block', marginLeft: '10vw' }}
+                        style={{ width: '100%', height: 'auto', display: 'block' }}
                     />
                 </div>
 

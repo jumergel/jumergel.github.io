@@ -114,6 +114,16 @@ img {
 }
 
 
+/* ZOOMING INTO PHOTOS */
+.zoom-hover {
+  transition: transform 0.3s ease;
+}
+
+.zoom-hover:hover {
+  transform: scale(1.7);
+  cursor: pointer;
+}
+
 
 
 

@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom';
 const academicData = [
   {
     title: "Differential Geometry Research",
-    tags: ["Rising Researcher's Award", "Research", "Mathematics"]
+    tags: ["Rising Researcher's Award", "Research", "Mathematics"],
+    route: "/academics/differential-geometry"
   },
   {
     title: "Operating Systems Overview",
