@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1bfe2941.css",
-    "main.js": "/static/js/main.1bd8b2db.js",
+    "main.js": "/static/js/main.3c8ae3f0.js",
     "static/js/453.557ad70b.chunk.js": "/static/js/453.557ad70b.chunk.js",
     "static/media/wakesurfing.jpg": "/static/media/wakesurfing.06524daaf7b2bff2de74.jpg",
     "static/media/juliagradedited.png": "/static/media/juliagradedited.e74f5c86928850ccf3f1.png",
@@ -10,18 +10,26 @@
     "static/media/bird.png": "/static/media/bird.62deb0e495aec65f102e.png",
     "static/media/previewimage_traveldiary.png": "/static/media/previewimage_traveldiary.7b3dd5881c3aa7efb3d4.png",
     "static/media/pastel_tree.jpg": "/static/media/pastel_tree.c8e98d1734ef69910117.jpg",
+    "static/media/stats_page.png": "/static/media/stats_page.47b08096da9ac5fb638b.png",
     "static/media/plant.png": "/static/media/plant.4ee939dae3ad58c8e742.png",
     "static/media/differential_geometry.png": "/static/media/differential_geometry.c67964f3e65b12328912.png",
+    "static/media/homescreen_quizhaven.png": "/static/media/homescreen_quizhaven.bb4e87b2a38bddcc73ec.png",
+    "static/media/next_question.png": "/static/media/next_question.6ece05610ec88f56ef99.png",
+    "static/media/login_quizhaven.png": "/static/media/login_quizhaven.f5eea626aea36f343e0b.png",
+    "static/media/what_to_study.png": "/static/media/what_to_study.7711550c51ec59293795.png",
+    "static/media/studying_quizhaven.png": "/static/media/studying_quizhaven.d18f075c24184096a877.png",
+    "static/media/startquiz.png": "/static/media/startquiz.e4d6e7f9e61b6736013f.png",
     "static/media/lavender_ai_photo.avif": "/static/media/lavender_ai_photo.034f135fdc30ece51b5d.avif",
+    "static/media/test_score.png": "/static/media/test_score.6e2bed80d890d2452eaa.png",
     "static/media/mercerTeam.jpeg": "/static/media/mercerTeam.ad123fe36ba3cd346c45.jpeg",
     "static/media/differential_geometry_group.jpeg": "/static/media/differential_geometry_group.a0ffa0b19d794b4b576c.jpeg",
     "index.html": "/index.html",
     "main.1bfe2941.css.map": "/static/css/main.1bfe2941.css.map",
-    "main.1bd8b2db.js.map": "/static/js/main.1bd8b2db.js.map",
+    "main.3c8ae3f0.js.map": "/static/js/main.3c8ae3f0.js.map",
     "453.557ad70b.chunk.js.map": "/static/js/453.557ad70b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1bfe2941.css",
-    "static/js/main.1bd8b2db.js"
+    "static/js/main.3c8ae3f0.js"
   ]
 }
