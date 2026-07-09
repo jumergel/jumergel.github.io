@@ -21,6 +21,7 @@ import ToyOS from './pages/my-projects/ToyOS.js';
 import TravelDiary from './pages/my-projects/TravelDiary.js';
 import MercerCaseCompetition from './pages/academics/MercerCaseCompetition';
 import DifferentialGeometry from './pages/academics/DifferentialGeometry';
+import SproutSystemNotes from './pages/notes/SproutSystemNotes';
 
 import homeButton from './images/white-transparent.png';
 import homeButtonAnimated from './images/dark-home-animated.gif';
@@ -149,6 +150,9 @@ function App() {
           {/* /* ACADEMIC ROUTES */ }
           <Route path="/academics/mercer-case-competition" element={<MercerCaseCompetition />} />
           <Route path="/academics/differential-geometry" element={<DifferentialGeometry />} />
+
+          {/* /* NOTES ROUTES */ }
+          <Route path="/notes/sprout-system" element={<SproutSystemNotes />} />
         </Routes>
 
         <Footer />
